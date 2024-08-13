@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Interactivo</title>
+    <link rel="stylesheet" href="estylo.css">
+    <script type="text/javascript" src="/js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="/js/turn.min.js"></script>
+</head>
+<body>
+
+<div id="magazine">
+    
+
+    <div class="turn-page instructions-page">
+        <div class="instructions-content">
+            <h2>Instrucciones de Navegación</h2>
+            <ul>
+                <li><strong>Cambiar de Página:</strong> Desliza hacia la izquierda o la derecha para cambiar de página.</li>
+                <li><strong>Regresar al Índice:</strong> Haz clic en el botón <span class="return-index-icon">🔙</span> en la esquina superior derecha para regresar al índice.</li>
+                <li><strong>Enviar Mensaje por WhatsApp:</strong> Si estás interesado en algún modelo, haz clic en el ícono de WhatsApp <span class="whatsapp-icon-sample">📱</span> en la parte inferior central para enviar un mensaje directo.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="full-page turn-page" style="background-image: url('/img/portada.jpeg');"></div>
+
+    <div class="turn-page indice">
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#" class="goto-page" data-page="4">Sueter Acrilan</a></li>
+            <li><a href="#" class="goto-page" data-page="15">Sueter Viscosa</a></li>
+            <li><a href="#" class="goto-page" data-page="14">Pantalon</a></li>
+            <li><a href="#" class="goto-page" data-page="14">Pantalon</a></li>
+            <li><a href="#" class="goto-page" data-page="14">Pantalon</a></li>
+            <li><a href="#" class="goto-page" data-page="14">Pantalon</a></
+           
+        </ul>
+    </div>
+    <div class="turn-page" style="background-image:url('/img/sueter\ acrilan.png') ;">
+
+    </div>
+    <div class="turn-page" style="background-image: url('/img/Mod_35/MOD_35.JPG');">
+        <div class="title">Modelo 35</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%2035%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+    <div class="turn-page" style="background-image: url('/img/Mod_35/Mod\ 35_1.JPEG');">
+        <div class="title">Modelo 35</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%2035%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+    
+    <div class="turn-page" style="background-image: url('/img/Mod_35/Mod\ 35_4.JPEG');">
+        <div class="title">Modelo 35</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%2035%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_38/MOD_38.JPG');">
+        <div class="title">Modelo 38</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%2038%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_38/Mod\ 38_1.JPEG');">
+        <div class="title">Modelo 38</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%2038%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_38/Mod\ 38_4.JPEG');">
+        <div class="title">Modelo 38</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%2038%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_39/MOD_39.JPG');">
+        <div class="title">Modelo 39</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%2039%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_39/Mod\ 39_2.JPEG');">
+        <div class="title">Modelo 39</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%2039%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_142/MOD_142.JPG');">
+        <div class="title">Modelo 142</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20142%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_142/Mod\ 142_3.JPEG');">
+        <div class="title">Modelo 142</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20142%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+    
+    <div class="turn-page" style="background-image: url('/img/sueter\ viscosa.png');">
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_131/Mod\ 131_3.JPEG');">
+        <div class="title">Modelo 131</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20131%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_131/Mod\ 131_4.JPEG');">
+        <div class="title">Modelo 131</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20131%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_131/MOD_131.JPG');">
+        <div class="title">Modelo 131</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20131%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_132/MOD_132.JPEG');">
+        <div class="title">Modelo 132</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20132%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_132/MOD_132_2.JPEG');">
+        <div class="title">Modelo 132</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20132%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_132/MOD_132_3.JPEG');">
+        <div class="title">Modelo 132</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20132%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_133/MOD_133.JPG');">
+        <div class="title">Modelo 133</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20133%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_133/Mod\ 133_4.JPEG');">
+        <div class="title">Modelo 133</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20133%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_133/Mod\ 133_3.JPEG');">
+        <div class="title">Modelo 133</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20133%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_134/MOD_134.JPG');">
+        <div class="title">Modelo 134</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20134%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_134/Mod\ 134_2.JPEG');">
+        <div class="title">Modelo 134</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20134%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_134/Mod\ 134_3.JPEG');">
+        <div class="title">Modelo 134</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20134%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_135/MOD_135.JPG');">
+        <div class="title">Modelo 135</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20135%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_135/Mod\ 135_2.JPEG');">
+        <div class="title">Modelo 135</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20135%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_135/Mod\ 135_1.JPEG');">
+        <div class="title">Modelo 135</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20135%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_139/MOD_139.JPEG');">
+        <div class="title">Modelo 139</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20139%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_139/MOD_139_1.JPEG');">
+        <div class="title">Modelo 139</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20139%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_139/MOD_139_2.JPEG');">
+        <div class="title">Modelo 139</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20139%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_146/Mod\ 146_1.JPEG');">
+        <div class="title">Modelo 146</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20146%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_146/Mod\ 146_2.JPEG');">
+        <div class="title">Modelo 146</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20146%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_146/Mod\ 146_3.JPEG');">
+        <div class="title">Modelo 146</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20146%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_148/Mod\ 148_1.JPEG');">
+        <div class="title">Modelo 148</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20148%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_148/Mod\ 148_1.JPEG');">
+        <div class="title">Modelo 148</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20148%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_148/Mod\ 148_2.JPEG');">
+        <div class="title">Modelo 148</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20148%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_148/Mod\ 148_3.JPEG');">
+        <div class="title">Modelo 148</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20148%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_149/MOD_149.JPG');">
+        <div class="title">Modelo 149</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20149%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_149/Mod\ 149_2.JPEG');">
+        <div class="title">Modelo 149</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20149%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_149/Mod\ 149_4.JPEG');">
+        <div class="title">Modelo 149</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20149%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_150/MOD_150.JPG');">
+        <div class="title">Modelo 150</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20150%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_150/Mod\ 150_2.JPEG');">
+        <div class="title">Modelo 150</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20150%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_150/Mod\ 150_3.JPEG');">
+        <div class="title">Modelo 150</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20150%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_154/MOD_154.JPG');">
+        <div class="title">Modelo 154</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20154%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_154/Mod\ 154_2.JPEG');">
+        <div class="title">Modelo 154</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20154%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_154/Mod\ 154_3.JPEG');">
+        <div class="title">Modelo 154</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20154%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_155/MOD_155.JPG');">
+        <div class="title">Modelo 155</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20155%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_155/Mod\ 155_2.JPEG');">
+        <div class="title">Modelo 155</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20155%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+    <div class="turn-page" style="background-image: url('/img/Mod_155/Mod\ 155_3.JPEG');">
+        <div class="title">Modelo 155</div>
+        <button class="return-index" onclick="gotoIndex()">Regresar al Índice</button>
+        <a href="https://wa.me/527757714006?text=Estoy%20interesado%20en%20el%20modelo%20155%20¿Que%20Colores%20Manejan?" class="whatsapp-icon" target="_blank"><img src="/img/logo_whats.png" alt="logo"></a>
+    </div>
+
+
+    <div class="turn-page company-page">
+        <div class="company-details">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una empresa dedicada a...</p>
+            <iframe width="350" height="350" src="https://www.youtube.com/embed/AMO80J8WMZ0?si=sjMwasKcdED7NYRe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>Contacto</h3>
+            <p>Dirección:Privada Fresno #102,Colonia Benito juarez, Cuautepec de Hinojosa Hidalgo</p>
+            <p>Teléfono: +52 7757541657 </p>
+            <p>Email: aleana_alroga@hotmail.com</p>
+            <h3>Síguenos en nuestras redes sociales</h3>
+            <div class="social-media">
+                <a href="https://www.facebook.com/AleCarlup?locale=es_LA" target="_blank"><img src="/img/logo_face.png" alt="Facebook"></a>
+                
+                <a href="https://www.instagram.com/aleana_carlup_mx/" target="_blank"><img src="/img/logo_instagram.png" alt="Instagram"></a>
+                <!-- Añade más enlaces a redes sociales según sea necesario -->
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="clickable-area left-area"></div>
+<div class="clickable-area right-area"></div>
+
+<script src="/js/hoja.js"></script>
+<script>
+    function gotoIndex() {
+        $('#magazine').turn('page', 3);
+    }
+
+    $(document).ready(function() {
+        $('.goto-page').on('click', function (e) {
+            e.preventDefault();
+            var page = $(this).data('page');
+            $('#magazine').turn('page', page);
+        });
+    });
+</script>
+
+</body>
+</html>
